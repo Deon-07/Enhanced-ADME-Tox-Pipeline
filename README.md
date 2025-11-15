@@ -1,22 +1,6 @@
-# Enhanced ADME/Tox Pipeline
-
-A comprehensive Python pipeline for predicting ADME/Tox (Absorption, Distribution, Metabolism, Excretion, and Toxicity) properties with enhanced visualization and statistical analysis capabilities.
-
-![ADME/Tox Analysis](https://img.shields.io/badge/ADME-Tox-blue)
-![Python](https://img.shields.io/badge/Python-3.7%2B-green)
-![RDKit](https://img.shields.io/badge/RDKit-Required-orange)
-
-## Features
-
-### 🧪 **Chemical Analysis**
-- **Molecular Standardization**: Advanced standardization including charge correction, tautomer enumeration, and salt removal
-- **Multiple Prediction Models**: Enhanced LogS and Caco-2 predictions with confidence intervals
-- **Rule-based Filtering**: Comprehensive ADME/Tox rules including:
-  - Lipinski's Rule of Five
-  - Veber's Rules
-  - GSK-like Rules
-  - PAINS Filtering
-  - QED Scoring
+git add README.mdox Pipeline
+git commit -m "Update README image paths to images/"
+git push -u origin mainicting ADME/Tox (Absorption, Distribution, Metabolism, Excretion, and Toxicity) properties with enhanced visualization and statistical analysis capabilities.
   - Synthetic Accessibility
 
 ### 📊 **Enhanced Visualization**
@@ -40,59 +24,59 @@ A comprehensive Python pipeline for predicting ADME/Tox (Absorption, Distributio
 The pipeline generates comparison plots for key molecular properties, showing the distribution of compounds before and after applying the ADME/Tox filters.
 
 #### Molecular Weight (MW) Distribution
-![MW Comparison](comparison_mw.png)
+![MW Comparison](images/comparison_mw.png)
 - **Description**: Distribution of molecular weight before and after filtering. Molecular weight is a key parameter in Lipinski's Rule of Five and GSK rules.
 
 #### LogP (Octanol-Water Partition Coefficient)
-![LogP Comparison](comparison_logP.png)
+![LogP Comparison](images/comparison_logP.png)
 - **Description**: Distribution of LogP values before and after filtering. LogP measures lipophilicity and is crucial for membrane permeability predictions.
 
 #### Topological Polar Surface Area (TPSA)
-![TPSA Comparison](comparison_tpsa.png)
+![TPSA Comparison](images/comparison_tpsa.png)
 - **Description**: Distribution of TPSA values before and after filtering. TPSA is a key descriptor for membrane permeability and follows Veber's rules.
 
 #### Fraction of sp3 Carbons (Fsp3)
-![Fsp3 Comparison](comparison_fsp3.png)
+![Fsp3 Comparison](images/comparison_fsp3.png)
 - **Description**: Distribution of Fsp3 before and after filtering. Fsp3 is a measure of carbon saturation and is associated with better drug-likeness.
 
 #### Predicted Caco-2 Permeability
-![Caco-2 Comparison](comparison_caco2.png)
+![Caco-2 Comparison](images/comparison_caco2.png)
 - **Description**: Distribution of predicted Caco-2 permeability before and after filtering. Caco-2 is a model for intestinal absorption.
 
 #### Predicted Aqueous Solubility (LogS)
-![LogS Comparison](comparison_logS.png)
+![LogS Comparison](images/comparison_logS.png)
 - **Description**: Distribution of predicted LogS values before and after filtering. LogS predicts aqueous solubility, a critical property for oral bioavailability.
 
 #### Quantitative Estimate of Drug-likeness (QED)
-![QED Comparison](comparison_qed.png)
+![QED Comparison](images/comparison_qed.png)
 - **Description**: Distribution of QED scores before and after filtering. QED provides a comprehensive measure of drug-likeness.
 
 ### Advanced Statistical Visualizations
 
 #### Property Correlation Matrix
-![Correlation Matrix](enhanced_correlation_matrix.png)
+![Correlation Matrix](images/enhanced_correlation_matrix.png)
 - **Description**: Heatmap showing correlations between different molecular properties. Helps identify relationships between structural features and predicted properties.
 
 #### Rule Violation Heatmap
-![Violation Heatmap](rule_violation_heatmap.png)
+![Violation Heatmap](images/rule_violation_heatmap.png)
 - **Description**: Visual representation of which compounds failed which filters. Each row represents a filter rule, and each column represents a compound.
 
 #### Property Radar Chart
-![Radar Chart](property_radar_chart.png)
+![Radar Chart](images/property_radar_chart.png)
 - **Description**: Radar chart showing the distribution of multiple properties simultaneously, with percentile ranges displayed.
 
 #### Individual Property Distributions
 
 ##### Synthetic Accessibility Score
-![Synthetic Accessibility](synthetic_accessibility_enhanced_dist.png)
+![Synthetic Accessibility](images/synthetic_accessibility_enhanced_dist.png)
 - **Description**: Distribution of synthetic accessibility scores, which estimate how easily a compound can be synthesized.
 
 ##### Fsp3 Distribution
-![Fsp3 Distribution](fsp3_enhanced_dist.png)
+![Fsp3 Distribution](images/fsp3_enhanced_dist.png)
 - **Description**: Detailed distribution of fraction of sp3 carbons, an important metric for compound complexity.
 
 ##### Caco-2 Permeability Distribution
-![Caco-2 Distribution](caco2_enhanced_dist.png)
+![Caco-2 Distribution](images/caco2_enhanced_dist.png)
 - **Description**: Detailed distribution of predicted Caco-2 permeability values.
 
 ## Installation
