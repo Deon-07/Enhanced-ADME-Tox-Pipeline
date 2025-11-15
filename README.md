@@ -231,6 +231,7 @@ If you use this pipeline in your research, please cite:
   title = {Enhanced ADME/Tox Pipeline},
   author = Dip Kumar Ghosh,
   year = {2025},
+git: https://github.com/Deon-07/Enhanced-ADME-Tox-Pipeline
 
 }
 ```
@@ -245,7 +246,7 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 ### Development Setup
 ```bash
-git clone https://github.com/yourusername/admet-pipeline.git
+git clone [https://github.com/Deon-07/Enhanced-ADME-Tox-Pipeline]
 cd admet-pipeline
 pip install -e .
 ```
