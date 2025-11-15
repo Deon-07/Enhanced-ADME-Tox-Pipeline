@@ -255,7 +255,8 @@ pip install -e .
 
 For questions, issues, or contributions:
 - Open an issue on GitHub
-- Contact: your.email@example.com
+- Contact: dipkumarghosh@duck.com
+- Linkdin: https://www.linkedin.com/in/dip-kr-ghosh/
 
 ---
 
