@@ -33,6 +33,68 @@ A comprehensive Python pipeline for predicting ADME/Tox (Absorption, Distributio
 - **Comprehensive Output**: Excel files with multiple sheets and detailed explanations
 - **Robust Error Handling**: Graceful failure recovery and detailed logging
 
+## Example Visualizations
+
+### Property Distributions Before and After Filtering
+
+The pipeline generates comparison plots for key molecular properties, showing the distribution of compounds before and after applying the ADME/Tox filters.
+
+#### Molecular Weight (MW) Distribution
+![MW Comparison](comparison_mw.png)
+- **Description**: Distribution of molecular weight before and after filtering. Molecular weight is a key parameter in Lipinski's Rule of Five and GSK rules.
+
+#### LogP (Octanol-Water Partition Coefficient)
+![LogP Comparison](comparison_logP.png)
+- **Description**: Distribution of LogP values before and after filtering. LogP measures lipophilicity and is crucial for membrane permeability predictions.
+
+#### Topological Polar Surface Area (TPSA)
+![TPSA Comparison](comparison_tpsa.png)
+- **Description**: Distribution of TPSA values before and after filtering. TPSA is a key descriptor for membrane permeability and follows Veber's rules.
+
+#### Fraction of sp3 Carbons (Fsp3)
+![Fsp3 Comparison](comparison_fsp3.png)
+- **Description**: Distribution of Fsp3 before and after filtering. Fsp3 is a measure of carbon saturation and is associated with better drug-likeness.
+
+#### Predicted Caco-2 Permeability
+![Caco-2 Comparison](comparison_caco2.png)
+- **Description**: Distribution of predicted Caco-2 permeability before and after filtering. Caco-2 is a model for intestinal absorption.
+
+#### Predicted Aqueous Solubility (LogS)
+![LogS Comparison](comparison_logS.png)
+- **Description**: Distribution of predicted LogS values before and after filtering. LogS predicts aqueous solubility, a critical property for oral bioavailability.
+
+#### Quantitative Estimate of Drug-likeness (QED)
+![QED Comparison](comparison_qed.png)
+- **Description**: Distribution of QED scores before and after filtering. QED provides a comprehensive measure of drug-likeness.
+
+### Advanced Statistical Visualizations
+
+#### Property Correlation Matrix
+![Correlation Matrix](enhanced_correlation_matrix.png)
+- **Description**: Heatmap showing correlations between different molecular properties. Helps identify relationships between structural features and predicted properties.
+
+#### Rule Violation Heatmap
+![Violation Heatmap](rule_violation_heatmap.png)
+- **Description**: Visual representation of which compounds failed which filters. Each row represents a filter rule, and each column represents a compound.
+
+#### Property Radar Chart
+![Radar Chart](property_radar_chart.png)
+- **Description**: Radar chart showing the distribution of multiple properties simultaneously, with percentile ranges displayed.
+
+#### Individual Property Distributions
+
+##### Synthetic Accessibility Score
+![Synthetic Accessibility](synthetic_accessibility_enhanced_dist.png)
+- **Description**: Distribution of synthetic accessibility scores, which estimate how easily a compound can be synthesized.
+
+##### Fsp3 Distribution
+![Fsp3 Distribution](fsp3_enhanced_dist.png)
+- **Description**: Detailed distribution of fraction of sp3 carbons, an important metric for compound complexity.
+
+##### Caco-2 Permeability Distribution
+![Caco-2 Distribution](caco2_enhanced_dist.png)
+- **Description**: Detailed distribution of predicted Caco-2 permeability values.
+
 ## Installation
 
 ### Prerequisites
@@ -123,7 +185,7 @@ compound3,C1=CC=C(C=C1)C=O,Benzaldehyde
 - **Correlation Matrix**: Relationships between different properties
 - **Radar Charts**: Multi-property visualization
 - **Violation Heatmaps**: Pattern analysis of filter failures
-- **Comparison Plots**: Before/after filtering distributions
+- **Comparison Plots**: Before/after filtering distributions (as shown above)
 
 ### HTML Report (optional)
 - Interactive summary with all visualizations
@@ -229,10 +291,9 @@ If you use this pipeline in your research, please cite:
 ```bibtex
 @software{admet_pipeline_2025,
   title = {Enhanced ADME/Tox Pipeline},
-  author = Dip Kumar Ghosh,
+  author = {Dip Kumar Ghosh},
   year = {2025},
-git: https://github.com/Deon-07/Enhanced-ADME-Tox-Pipeline
-
+  url = {https://github.com/Deon-07/Enhanced-ADME-Tox-Pipeline}
 }
 ```
 
@@ -246,7 +307,7 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 ### Development Setup
 ```bash
-git clone [https://github.com/Deon-07/Enhanced-ADME-Tox-Pipeline]
+git clone https://github.com/Deon-07/Enhanced-ADME-Tox-Pipeline
 cd admet-pipeline
 pip install -e .
 ```
@@ -254,9 +315,9 @@ pip install -e .
 ## Support
 
 For questions, issues, or contributions:
-- Open an issue on GitHub
+- Open an issue on [GitHub](https://github.com/Deon-07/Enhanced-ADME-Tox-Pipeline)
 - Contact: dipkumarghosh@duck.com
-- Linkdin: https://www.linkedin.com/in/dip-kr-ghosh/
+- LinkedIn: [https://www.linkedin.com/in/dip-kr-ghosh/](https://www.linkedin.com/in/dip-kr-ghosh/)
 
 ---
 
