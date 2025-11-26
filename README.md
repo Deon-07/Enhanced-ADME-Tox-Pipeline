@@ -1,7 +1,4 @@
-git add README.mdox Pipeline
-git commit -m "Update README image paths to images/"
-git push -u origin mainicting ADME/Tox (Absorption, Distribution, Metabolism, Excretion, and Toxicity) properties with enhanced visualization and statistical analysis capabilities.
-  - Synthetic Accessibility
+
 
 ### 📊 **Enhanced Visualization**
 - **Publication-Quality Plots**: Beautiful histograms, box plots, and distribution analysis
